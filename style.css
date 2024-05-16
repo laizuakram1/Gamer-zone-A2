@@ -30,6 +30,11 @@ body{
     padding: 10px 20px;
     cursor: pointer;
 }
+.gradient-primary{
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* main styles  */
 nav{
@@ -157,15 +162,15 @@ nav{
 }
 .gamer-right h2{
     font-size: 3rem;
-    background: -webkit-linear-gradient(#F948B2, #8758F1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
 }
 .gamer-right .gamer-title{
     font-size: 18px;
     color: #534C64;
     line-height: 30px;
+}
+.gamer-right button{
+    margin: 20px 0px;
 }
 .gamer-right p{
     font-size: 1.25rem;
@@ -177,6 +182,61 @@ nav{
     font-weight: 700;
 }
 
+/*online games section style*/
+.online-game{
+    padding: 40px 100px;
+}
+.online-game-title{
+    text-align: center;
+    margin: 40px 0px;
+}
+.online-game-title > h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.online-game-title > p{
+    font-size: 18px;
+    color: #534C64;
+}
+.game-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+.game{
+    max-width: 250px;
+    height: 360px;
+}
+.game img{
+    width: 100%;
+}
+.game > p{
+    font-size: 1rem;
+    color: #534C64;
+    margin-top: 15px;
+}
+.game-video{
+    position: relative;
+}
+.game-video > img{
+    filter: brightness(0.3);
+}
+.video-content{
+    position:absolute;
+    top: 120px;
+    left: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.video-content img{
+    width: 30px;
+    height: 30px;
+}
+.video-content p{
+    font-size: 18px;
+    color:#FF42A5;
+}
 
 @media screen and (max-width: 576px) {
     nav{
@@ -234,4 +294,22 @@ nav{
     .gamer-right q{
         font-size: 1.5rem;
     }
+
+    .online-game{
+        padding: 0px 5px;
+    }
+    .online-game-title > h1{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .online-game-title > p{
+        font-size: 1.25rem;
+    }
+    .game-container{
+        justify-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    
 }
