@@ -212,6 +212,7 @@ nav{
     width: 100%;
 }
 .game > p{
+    width: 240px;
     font-size: 1rem;
     color: #534C64;
     margin-top: 15px;
@@ -238,6 +239,45 @@ nav{
     color:#FF42A5;
 }
 
+
+/*play instant styles*/
+.play-instant{
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-instant-text{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+.play-instant-text{
+    max-width: 50%;
+}
+.play-instant-text h1{
+    font-size: 2.5rem;
+    line-height: 55px;
+}
+.play-instant-text p{
+    margin-top: 30px;
+    color: #534C64; 
+    line-height: 30px;
+}
+.play-instant-img{
+    max-width: 50%;
+    position: relative;
+}
+.play-instant-img img{
+    width: 100%;
+}
+.play-instant-img .play-instant-sub-image{
+    max-width:50%;
+    position: absolute;
+    left: -120px;
+    bottom: -70px;
+}
 @media screen and (max-width: 576px) {
     nav{
         flex-direction: column;
@@ -276,6 +316,7 @@ nav{
         flex-direction: column;
         padding: 0px 5px;
         margin-top: 30px;
+        
     }
     .gamer-left{
         width:27.5rem;
@@ -286,7 +327,7 @@ nav{
     .gamer-right{
         width: 27.5rem;
         text-align: center;
-        padding:0px 5px;
+        padding: 0px 15px;
     }
     .gamer-right button{
         margin: 30px 0px;
@@ -296,6 +337,7 @@ nav{
     }
 
     .online-game{
+        margin-top: 100px;
         padding: 0px 5px;
     }
     .online-game-title > h1{
@@ -311,5 +353,21 @@ nav{
         row-gap: 20px;
     }
 
+    .play-instant{
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+    .play-instant-text{
+        max-width: 100%;
+        text-align: center;
+        margin: 80px 0px;
+    }
+    .play-instant-img{
+    max-width: 80%;  
+    }
+    .play-instant-img .play-instant-sub-image{
+        left: -30px;
+        
+    }
     
 }
