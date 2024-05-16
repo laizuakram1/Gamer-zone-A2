@@ -7,7 +7,7 @@
     font-family: "Work Sans", sans-serif;
 }
 body{
-    max-width: 1280px;
+    max-width: 1320px;
     margin:auto;
 }
 .btn-primary{
@@ -18,6 +18,7 @@ body{
     outline: 0;
     border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 .btn-secondary{
     font-size: 1.25rem;
@@ -27,6 +28,7 @@ body{
     outline: 0;
     border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 /* main styles  */
@@ -34,7 +36,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 100px;
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 12px -18px;
 }
@@ -86,14 +88,14 @@ nav{
 /* play like section style */
 .play_like{
     width: 100%;
-    /* height: 37.5rem; */
+    padding: 0px 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
 }
 .play-like-left{
-    width: 40%;
+    width: 50%;
 }
 .play-like-left-text{
     width: 25rem;
@@ -126,10 +128,53 @@ nav{
 }
 
 .play-like-right{
-    width: 40%;
+    width: 50%;
 }
 .play-like-right img{
     max-width: 100%;
+}
+
+/*gamer section style*/
+#gamer{
+    padding: 0px 100px;
+    background-color: #f9f1f9;
+}
+.gamer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gamer-left{
+    width: 55%;
+}
+.gamer-left img{
+    width: 100%;
+}
+.gamer-right{
+    width: 45%;
+    text-align: right;
+}
+.gamer-right h2{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.gamer-right .gamer-title{
+    font-size: 18px;
+    color: #534C64;
+    line-height: 30px;
+}
+.gamer-right p{
+    font-size: 1.25rem;
+    color: #534C64
+}
+.gamer-right q{
+    font-size: 1.75rem;
+    color: #534C64;
+    font-weight: 700;
 }
 
 
@@ -149,21 +194,44 @@ nav{
         flex-direction: column-reverse;
     }
     .play-like-left{
-    width: 95%;
+    width: 25rem;
     background-color: #f9f1f9;
-    padding: 40px 20px;
     border-radius: 4px;
     margin-top: 20px;
     }
     .play-like-left-text{
         width: 100%;
+        padding: 20px;
     }
     .play-like-left-text h3{
         font-size: 2.5rem;
     }
     
     .play-like-right{
-        width: 80%;
+        width: 25rem;
     }
-    
+    #gamer{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px;
+        margin-top: 30px;
+    }
+    .gamer-left{
+        width:27.5rem;
+    }
+    .gamer-left img{
+        width: 100%;
+    }
+    .gamer-right{
+        width: 27.5rem;
+        text-align: center;
+        padding:0px 5px;
+    }
+    .gamer-right button{
+        margin: 30px 0px;
+    }
+    .gamer-right q{
+        font-size: 1.5rem;
+    }
 }
