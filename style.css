@@ -278,6 +278,20 @@ nav{
     left: -120px;
     bottom: -70px;
 }
+
+/*play games section style*/
+.play-games{
+    padding: 40px 100px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.play-games .play-instant-sub-image{
+    top: 320px;
+    left: 400px;
+}
 @media screen and (max-width: 576px) {
     nav{
         flex-direction: column;
@@ -368,6 +382,15 @@ nav{
     .play-instant-img .play-instant-sub-image{
         left: -30px;
         
+    }
+
+    .play-games{
+    padding: 0px 10px;
+    flex-direction: column;
+    }
+    .play-games .play-instant-sub-image{
+        left:200px;
+        top: 180px;
     }
     
 }
