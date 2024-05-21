@@ -30,6 +30,16 @@ body{
     padding: 10px 20px;
     cursor: pointer;
 }
+.btn-career{
+    font-size: 1.25rem;
+    color: #F948B2;
+    background-color: #FFFFFF; 
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    padding: 13px 30px;
+    cursor: pointer;
+}
 .gradient-primary{
     background: -webkit-linear-gradient(#F948B2, #8758F1);
   -webkit-background-clip: text;
@@ -289,8 +299,59 @@ nav{
     margin-top: 60px;
 }
 .play-games .play-instant-sub-image{
-    top: 320px;
+    top: 300px;
     left: 400px;
+}
+
+/*career section style*/
+.careers{
+    width: 100%;
+    background-color: #F948B2;
+    margin-top: 150px;
+    
+}
+.career-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+.career-text{
+    width: 50%;
+}
+.career-text h1{
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+.career-text p{
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.expert-details{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.expert > li{
+    list-style: none;
+    font-size: 1.25rem;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.country > li{
+    list-style: none;
+    font-size: 1.25rem;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: right;
+}
+.career-image{
+    width: 50%;
+}
+
+.career-image img{
+    width: 100%;
 }
 @media screen and (max-width: 576px) {
     nav{
@@ -393,4 +454,24 @@ nav{
         top: 180px;
     }
     
+    .career-container{
+        flex-direction: column;
+        justify-items: center;
+        padding: 10px 10px;
+    }
+    .career-text{
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .career-image{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .career-text p{
+        font-size: 12px;
+        
+    }
+    .expert-details > li{
+        font-size: 14px;
+    }
 }
